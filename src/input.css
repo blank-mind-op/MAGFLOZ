@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .rounded-b-1 {
+     border-bottom-left-radius: 50% ;
+     border-bottom-right-radius: 50% ;
+    }
+} 

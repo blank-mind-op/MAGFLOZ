@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        purpleCustom: 'rgba(183, 132, 241, 0.2)',
+                        customPurple1: '#B784F1',
+                    },
+                    fontFamily: {
+                        urbanist: ['Urbanist', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100  flex items-center justify-center min-h-screen">
+    <div
+        class="newf bg-white shadow-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl rounded-2xl flex flex-col sm:flex-row max-w-3xl p-5 items-center">
+        <!-- Image avec flex-column pour mobile -->
+        <div class="w-full sm:w-1/2 sm:block flex flex-col mb-4 sm:mb-0">
+            
+            <img src="img/4.png" alt="Image" class="block md:hidden w-full h-auto mx-auto">
+
+            <img src="img/1.png" alt="image" class="max-h-[1600px] rounded-[20px] object-cover">
+        </div>
+
+        <!-- Section de contenu -->
+        <div class="w-full p-8 lg:w-1/2 text-center">
+
+            <div class="mx-auto items-center flex flex-col sm:flex-col sm:flex-row justify-center ">
+                <button class="bg-purpleCustom text-black font-bold py-2 px-10 rounded-[20px] hover:bg-gray-600 mb-4 mx-auto flex justify-center">
+                    <h1 class="text-2xl font-semibold text-gray-600 font-urbanist">
+                        S'inscrire
+                    </h1>
+                </button>
+                <a href="sign_in.html">
+                <button class="bg-purpleCustom text-black font-bold py-2 px-8 rounded-[20px] hover:bg-gray-600 mx-auto flex justify-center">
+                    <h1 class="text-2xl font-semibold text-gray-600 font-urbanist">
+                        S'identifier
+                    </h1>
+                </button></a>
+            </div>
+           
+
+            <div class="text-center mx-auto">
+                <!-- Texte pour la connexion -->
+                <p class="items-center justify-center">Se connecter avec:</p>
+
+                <!-- Boutons pour l'authentification tiers -->
+                <div id="third-party-auth" class="flex items-center justify-center mt-1 space-x-4">
+                    <button href="#" class="hover:scale-105 ease-in-out p-2">
+                        <img class="max-w-[30px]"
+                            src="https://ucarecdn.com/6f56c0f1-c9c0-4d72-b44d-51a79ff38ea9/" alt="Facebook" />
+                    </button>
+
+                    <button href="#" class="hover:scale-105 ease-in-out p-2">
+                        <img class="max-w-[30px]"
+                            src="https://ucarecdn.com/8f25a2ba-bdcf-4ff1-b596-088f330416ef/" alt="Google" />
+                    </button>
+
+                    <button href="#" class="hover:scale-105 ease-in-out p-2">
+                        <img class="max-w-[30px]"
+                            src="https://ucarecdn.com/3277d952-8e21-4aad-a2b7-d484dad531fb/" alt="Apple" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

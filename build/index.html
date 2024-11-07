@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Magflooz</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        font-family: 'Urbanist';
+    }
+</style>
+
+
+<body>
+    <div class="w-full h-full flex flex-col">
+        <nav class="flex items-center p-3 ">
+            <div class="flex items-center cursor-pointer gap-3">
+                <img src="img/logo.png" class="w-10">
+                <span class="text-3xl font-black text-[#863DD8]">Magflooz</span>
+            </div>
+
+            <!-- Menu de navigation -->
+            <ul class="hidden flex-1 text-center lg:flex items-center ">
+                <li class="inline-block"> <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                        data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 text-xl">Fonctionnalites<svg
+                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg></button></li>
+                <li class="inline-block">
+                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                        data-dropdown-placement="right-start" type="button"
+                        class="flex items-center justify-between w-full px-4 py-2 text-xl">Options<svg
+                            class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg></button>
+                </li>
+                <li class="inline-block text-xl"><a href="">A propos</a></li>
+            </ul>
+
+
+            <div class="lg:flex gap-2 items-center h-full hidden">
+                <a href="sign_up.html" class="text-xl  inline-block">Connexion</a>
+                <a href="#"
+                    class="bg-[#863DD8] font-bold rounded-lg p-2 text-xl h-full text-white px-3 inline-block">Obtenez
+                    Magflooz gratuitement</a>
+            </div>
+
+            <!-- Bouton hamburger pour les tailles mobiles/tablettes -->
+            <button id="hamburger-button" class="text-3xl lg:hidden ml-auto">&#9776;</button>
+        </nav>
+
+        <div class="h-screen  relative sm:pl-20 sm:mx-0 mx-auto px4"
+            style="background: linear-gradient(to bottom, #F8F4FC, #863DD8);">
+            <div class="sm:w-[450px] mt-24 w-full ">
+                <h1 class="text-3xl sm:text-5xl text-[#060308] opacity-80 font-bold text-center sm:text-left">Magflooz rassemble toutes vos depenses.</h1>
+                <p class="mt-16 text-lg sm:text-2xl font-extrabold text-center sm:text-left">Suivez et gerez vos depenses de maniere simple et efficace.</p>
+
+                <div class="flex flex-col items-center sm:items-start space-y-5 mt-8">
+                    <a href="sign_up.html"
+                            class="inline-block mt-10 bg-[#863DD8] p-3 font-bold text-center rounded-full sm:w-full  sm:text-xl text-base text-white">Accedez
+                            a votre espace de travail</a>
+                    <a href="sign_up.html"
+                            class="inline-block bg-[#863DD8] mt-5 p-3 font-bold  text-center rounded-full sm:w-full text-white text-base sm:text-xl">Obtenez
+                            Magflooz gratuitement</a>
+                </div>
+            </div>
+
+            <img src="img/hero2.png" class="w-[225px] h-[500px] lg:block absolute top-16 right-52 hidden">
+            <img src="img/hero.png" class="w-[200px] h-[500px]  absolute top-20 right-4 md:block hidden">
+        </div>
+    </div>
+</body>
+
+</html>
